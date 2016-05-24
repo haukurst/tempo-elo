@@ -12,11 +12,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import dj_database_url
-db_from_env = dj_database_url.config(conn_max_age=500)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+DEBUG = False
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -40,9 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fifa_elo',
-    'foos_elo',
-    'rocket_elo',
+    'fifa_elo',  # TODO: remove
+    'foos_elo',  # TODO: remove
+    'rocket_elo',  # TODO: remove
+    'elo',
 )
 
 MIDDLEWARE_CLASSES = (
