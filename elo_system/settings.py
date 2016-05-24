@@ -87,7 +87,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
     }
 }
-DATABASES['default'].update(db_from_env)
+# DATABASES['default'].update(db_from_env)
 
 
 # Internationalization
